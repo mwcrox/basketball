@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Conference Tournament Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="container">
+        <div class="title-row">
+            <div>
+                <h1>Conference Tournament Tracker</h1>
+                <p class="sub">
+                    Tables will appear to help track games to watch.
+                </p>
+            </div>
+
+            <div class="date-tools">
+                <label class="field">
+                    <span>Simulate date</span>
+                    <select id="simDay">
+                        <option value="">Today</option>
+                    </select>
+                </label>
+                <button id="resetDate" class="btn">Reset to today</button>
+            </div>
+        </div>
+
+        <div class="meta">
+            <div><strong>Timezone:</strong> <span id="tzLabel"></span></div>
+            <div><strong>Viewing date:</strong> <span id="viewDateLabel"></span></div>
+        </div>
+    </header>
+
+    <main class="container" id="app"></main>
+
+    <footer class="container footer">
+        <small>
+            Conference Champions will be manually updated.
+        </small>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
