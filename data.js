@@ -61,8 +61,8 @@ window.CONFERENCE_TOURNAMENTS = [
     },
     {
         key: "Big West", start: "2026-03-11", end: "2026-03-14",
-        champISO: null,
-        channel: null,
+        champISO: "2026-03-14T19:00:00-07:00",
+        channel: "ESPN2",
         winner: null
     },
     {
@@ -91,8 +91,8 @@ window.CONFERENCE_TOURNAMENTS = [
     },
     {
         key: "MAAC", start: "2026-03-05", end: "2026-03-10",
-        champISO: null,
-        channel: "ESPN/ESPN2",
+        champISO: "2026-03-10T21:00:00-04:00",
+        channel: "ESPN2",
         winner: null
     },
     {
@@ -103,8 +103,8 @@ window.CONFERENCE_TOURNAMENTS = [
     },
     {
         key: "MEAC", start: "2026-03-11", end: "2026-03-14",
-        champISO: null,
-        channel: null,
+        champISO: "2026-03-14T13:00:00-04:00",
+        channel: "ESPN2",
         winner: null
     },
     {
@@ -133,8 +133,8 @@ window.CONFERENCE_TOURNAMENTS = [
     },
     {
         key: "Patriot League", start: "2026-03-03", end: "2026-03-11",
-        champISO: null,
-        channel: null,
+        champISO: "2026-03-11T19:00:00-04:00",
+        channel: "CBS Sports Network",
         winner: null
     },
     {
@@ -146,7 +146,7 @@ window.CONFERENCE_TOURNAMENTS = [
     {
         key: "SoCon", start: "2026-03-06", end: "2026-03-09",
         champISO: "2026-03-09T19:00:00-04:00",
-        channel: null,
+        channel: "ESPN / ESPN2",
         winner: null
     },
     {
@@ -158,7 +158,7 @@ window.CONFERENCE_TOURNAMENTS = [
     {
         key: "SWAC", start: "2026-03-09", end: "2026-03-14",
         champISO: "2026-03-14T19:30:00-04:00",
-        channel: null,
+        channel: "ESPNU",
         winner: null
     },
     {
@@ -175,14 +175,14 @@ window.CONFERENCE_TOURNAMENTS = [
     },
     {
         key: "West Coast", start: "2026-03-05", end: "2026-03-10",
-        champISO: "2026-03-10T21:00:00-04:00",
-        channel: null,
+        champISO: "2026-03-10T18:00:00-07:00",
+        channel: "ESPN",
         winner: null
     },
     {
         key: "WAC", start: "2026-03-11", end: "2026-03-14",
-        champISO: null,
-        channel: null,
+        champISO: "2026-03-14T21:00:00-07:00",
+        channel: "ESPN2",
         winner: null
     }
 ];
