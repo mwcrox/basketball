@@ -27,7 +27,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "ASUN", start: "2026-03-04", end: "2026-03-08",
         champISO: "2026-03-08T14:00:00-04:00",
         channel: "ESPN2",
-        winner: "Liberty"
+        winner: null
     },
     {
         key: "Big 12", start: "2026-03-10", end: "2026-03-14",
@@ -165,7 +165,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Summit League", start: "2026-03-04", end: "2026-03-08",
         champISO: "2026-03-08T21:00:00-04:00",
         channel: "CBSSN",
-        winner: "South Dakota State"
+        winner: null
     },
     {
         key: "Sun Belt", start: "2026-03-03", end: "2026-03-09",
