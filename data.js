@@ -110,8 +110,8 @@ window.CONFERENCE_TOURNAMENTS = [
     {
         key: "Missouri Valley", start: "2026-03-05", end: "2026-03-08",
         champISO: "2026-03-08T12:00:00-04:00",
-        channel: "CBS Sports Network",
-        winner: "Drake"
+        channel: "CBS",
+        winner: null
     },
     {
         key: "Mountain West", start: "2026-03-11", end: "2026-03-14",
@@ -122,7 +122,7 @@ window.CONFERENCE_TOURNAMENTS = [
     {
         key: "Northeast", start: "2026-03-04", end: "2026-03-10",
         champISO: "2026-03-10T19:00:00-04:00",
-        channel: "ESPN2/ESPN+",
+        channel: "ESPN2",
         winner: null
     },
     {
@@ -146,7 +146,7 @@ window.CONFERENCE_TOURNAMENTS = [
     {
         key: "SoCon", start: "2026-03-06", end: "2026-03-09",
         champISO: "2026-03-09T19:00:00-04:00",
-        channel: "ESPN / ESPN2",
+        channel: "ESPN",
         winner: null
     },
     {
@@ -169,8 +169,8 @@ window.CONFERENCE_TOURNAMENTS = [
     },
     {
         key: "Sun Belt", start: "2026-03-03", end: "2026-03-09",
-        champISO: "2026-03-09T18:00:00-04:00",
-        channel: "ESPN/ESPN2",
+        champISO: "2026-03-09T19:00:00-04:00",
+        channel: "ESPN2",
         winner: null
     },
     {
