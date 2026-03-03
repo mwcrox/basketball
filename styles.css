@@ -307,3 +307,12 @@ th {
         min-width: 720px;
     }
 }
+
+.row-strong a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.row-strong a:hover {
+    text-decoration: underline;
+}
