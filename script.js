@@ -39,7 +39,9 @@
     function formatRange(start, end) {
         const s = new Date(start + "T00:00:00Z");
         const e = new Date(end + "T00:00:00Z");
-        const fmt = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" });
+        const fmt = new Intl.DateTimeFormat("en-US", {
+            month: "short", day: "numeric", year: "numeric", timeZone: "UTC"
+        });
         return `${fmt.format(s)} – ${fmt.format(e)}`;
     }
 
@@ -62,13 +64,32 @@
         const selectedDay = simDaySelect.value;
 
         if (!selectedDay) {
-            // Use real today in user's timezone
             return ymdInTZ(new Date(), TZ);
         }
 
-        // Always March 2026
         const day = String(selectedDay).padStart(2, "0");
         return `2026-03-${day}`;
+    }
+
+    // 🔥 NEW: Creates conference cell (link or plain text)
+    function createConferenceCell(r) {
+        const td = document.createElement("td");
+        td.className = "row-strong";
+
+        const shouldLink = (r.ongoing || r.champToday) && r.espnUrl;
+
+        if (shouldLink) {
+            const a = document.createElement("a");
+            a.href = r.espnUrl;
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+            a.textContent = r.key;
+            td.appendChild(a);
+        } else {
+            td.textContent = r.key;
+        }
+
+        return td;
     }
 
     function renderSection(title, badgeText, badgeClass, rows, columns, rowRenderer) {
@@ -80,7 +101,7 @@
         const header = document.createElement("div");
         header.className = "section-header";
         header.innerHTML = `<h2 class="section-title">${title}</h2>
-                      <div class="badge ${badgeClass || ""}">${badgeText}</div>`;
+                            <div class="badge ${badgeClass || ""}">${badgeText}</div>`;
         section.appendChild(header);
 
         const wrap = document.createElement("div");
@@ -136,56 +157,76 @@
         const notStartedRows = data.filter(d => !d.started);
         const overRows = data.filter(d => d.over);
 
-        renderSection("Conference Championship Today", `${champTodayRows.length} conference(s)`, "bad",
+        function standardRow(r) {
+            const tr = document.createElement("tr");
+
+            tr.appendChild(createConferenceCell(r));
+
+            const tdRange = document.createElement("td");
+            tdRange.textContent = r.rangeText;
+            tr.appendChild(tdRange);
+
+            const tdChamp = document.createElement("td");
+            tdChamp.textContent = r.champLocalText;
+            tr.appendChild(tdChamp);
+
+            const tdTV = document.createElement("td");
+            tdTV.textContent = r.channel || "TBD";
+            tr.appendChild(tdTV);
+
+            return tr;
+        }
+
+        renderSection("Conference Championship Today",
+            `${champTodayRows.length} conference(s)`,
+            "bad",
             champTodayRows,
             ["Conference", "Tournament Dates", "Championship (Local)", "TV"],
-            r => {
-                const tr = document.createElement("tr");
-                tr.innerHTML = `<td class="row-strong">${r.key}</td>
-                      <td>${r.rangeText}</td>
-                      <td>${r.champLocalText}</td>
-                      <td>${r.channel || "TBD"}</td>`;
-                return tr;
-            });
+            standardRow
+        );
 
-        renderSection("Conference Tournament Has Started", `${startedRows.length} conference(s)`, "warn",
+        renderSection("Conference Tournament Has Started",
+            `${startedRows.length} conference(s)`,
+            "warn",
             startedRows,
             ["Conference", "Tournament Dates", "Championship (Local)", "TV"],
-            r => {
-                const tr = document.createElement("tr");
-                tr.innerHTML = `<td class="row-strong">${r.key}</td>
-                      <td>${r.rangeText}</td>
-                      <td>${r.champLocalText}</td>
-                      <td>${r.channel || "TBD"}</td>`;
-                return tr;
-            });
+            standardRow
+        );
 
-        renderSection("Conference Tournament Schedule (Not Started Yet)", `${notStartedRows.length} conference(s)`, "good",
+        renderSection("Conference Tournament Schedule (Not Started Yet)",
+            `${notStartedRows.length} conference(s)`,
+            "good",
             notStartedRows,
             ["Conference", "Tournament Dates", "Championship (Local)", "TV"],
-            r => {
-                const tr = document.createElement("tr");
-                tr.innerHTML = `<td class="row-strong">${r.key}</td>
-                      <td>${r.rangeText}</td>
-                      <td>${r.champLocalText}</td>
-                      <td>${r.channel || "TBD"}</td>`;
-                return tr;
-            });
+            standardRow
+        );
 
-        renderSection("Conference Tournament Over", `${overRows.length} conference(s)`, "",
+        renderSection("Conference Tournament Over",
+            `${overRows.length} conference(s)`,
+            "",
             overRows,
-            ["Conference", "Winner / Championship Info", "Tournament Dates"],  // <-- flipped
+            ["Conference", "Winner / Championship Info", "Tournament Dates"],
             r => {
                 const tr = document.createElement("tr");
-                const info = r.winner
+
+                const tdConf = document.createElement("td");
+                tdConf.className = "row-strong";
+                tdConf.textContent = r.key;
+                tr.appendChild(tdConf);
+
+                const tdInfo = document.createElement("td");
+                tdInfo.innerHTML = r.winner
                     ? `<span class="row-strong">${r.winner}</span>`
                     : `Championship: ${r.champLocalText} • ${r.channel || "TBD"}`;
+                tr.appendChild(tdInfo);
 
-                tr.innerHTML = `<td class="row-strong">${r.key}</td>
-                  <td>${info}</td>
-                  <td>${r.rangeText}</td>`;
+                const tdRange = document.createElement("td");
+                tdRange.textContent = r.rangeText;
+                tr.appendChild(tdRange);
+
                 return tr;
-            });
+            }
+        );
     }
 
     simDaySelect.addEventListener("change", render);
