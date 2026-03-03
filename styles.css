@@ -310,9 +310,17 @@ th {
 
 .row-strong a {
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+}
+
+.row-strong a:visited {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 .row-strong a:hover {
+    color: #ffffff;
     text-decoration: underline;
 }
