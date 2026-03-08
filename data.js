@@ -150,7 +150,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Ohio Valley", start: "2026-03-04", end: "2026-03-07",
         champISO: "2026-03-07T20:00:00-05:00",
         channel: "ESPN2",
-        winner: null,
+        winner: "Tennessee State",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/20"
     },
     {
