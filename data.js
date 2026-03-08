@@ -59,7 +59,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Big South", start: "2026-03-04", end: "2026-03-08",
         champISO: "2026-03-08T12:00:00-04:00",
         channel: "ESPN2",
-        winner: null,
+        winner: "High Point",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/6"
     },
     {
@@ -129,7 +129,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Missouri Valley", start: "2026-03-05", end: "2026-03-08",
         champISO: "2026-03-08T12:00:00-04:00",
         channel: "CBS",
-        winner: null,
+        winner: "Northern Iowa",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/18"
     },
     {
