@@ -192,7 +192,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Summit League", start: "2026-03-04", end: "2026-03-08",
         champISO: "2026-03-08T21:00:00-04:00",
         channel: "CBSSN",
-        winner: null,
+        winner: "North Dakota State",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/49"
     },
     {
