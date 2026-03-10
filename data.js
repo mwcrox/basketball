@@ -143,7 +143,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Northeast", start: "2026-03-04", end: "2026-03-10",
         champISO: "2026-03-10T19:00:00-04:00",
         channel: "ESPN2",
-        winner: null,
+        winner: "Long Island",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/19"
     },
     {
