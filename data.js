@@ -171,7 +171,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "SoCon", start: "2026-03-06", end: "2026-03-09",
         champISO: "2026-03-09T19:00:00-04:00",
         channel: "ESPN",
-        winner: null,
+        winner: "Furman",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/24"
     },
     {
@@ -199,7 +199,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Sun Belt", start: "2026-03-03", end: "2026-03-09",
         champISO: "2026-03-09T19:00:00-04:00",
         channel: "ESPN2",
-        winner: null,
+        winner: "Troy",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/27"
     },
     {
