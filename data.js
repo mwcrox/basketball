@@ -108,7 +108,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "MAAC", start: "2026-03-05", end: "2026-03-10",
         champISO: "2026-03-10T21:00:00-04:00",
         channel: "ESPN2",
-        winner: null,
+        winner: "Siena",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/13"
     },
     {
