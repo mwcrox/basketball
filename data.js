@@ -206,7 +206,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "West Coast", start: "2026-03-05", end: "2026-03-10",
         champISO: "2026-03-10T18:00:00-07:00",
         channel: "ESPN",
-        winner: null,
+        winner: "Gonzaga",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/29"
     },
     {
