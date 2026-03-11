@@ -80,7 +80,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "CAA", start: "2026-03-06", end: "2026-03-10",
         champISO: "2026-03-10T19:00:00-04:00",
         channel: "CBSSN",
-        winner: null,
+        winner: "Hofstra", 
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/10"
     },
     {
@@ -94,7 +94,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Horizon League", start: "2026-03-02", end: "2026-03-10",
         champISO: "2026-03-10T19:00:00-04:00",
         channel: "ESPN",
-        winner: null,
+        winner: "Wright State", 
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/45"
     },
     {
