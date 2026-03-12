@@ -157,7 +157,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Patriot League", start: "2026-03-03", end: "2026-03-11",
         champISO: "2026-03-11T19:00:00-04:00",
         channel: "CBS Sports Network",
-        winner: null,
+        winner: "Lehigh",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/22"
     },
     {
@@ -178,7 +178,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Southland", start: "2026-03-08", end: "2026-03-11",
         champISO: "2026-03-11T17:00:00-04:00",
         channel: "ESPN2",
-        winner: null,
+        winner: "McNeese",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/25"
     },
     {
