@@ -45,14 +45,14 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Big East", start: "2026-03-11", end: "2026-03-14",
         champISO: "2026-03-14T18:30:00-04:00",
         channel: "FOX",
-        winner: "Idaho",
+        winner: null,
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/4"
     },
     {
         key: "Big Sky", start: "2026-03-07", end: "2026-03-11",
         champISO: "2026-03-11T23:30:00-04:00",
         channel: "ESPN2",
-        winner: null,
+        winner: "Idaho",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/5"
     },
     {
