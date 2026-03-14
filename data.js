@@ -3,7 +3,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "America East", start: "2026-03-07", end: "2026-03-14",
         champISO: "2026-03-14T11:00:00-04:00",
         channel: "ESPN2",
-        winner: null,
+        winner: "UMBC",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/1"
     },
     {
@@ -74,13 +74,13 @@ window.CONFERENCE_TOURNAMENTS = [
         champISO: "2026-03-14T19:00:00-07:00",
         channel: "ESPN2",
         winner: null,
-        espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/8"
+        espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/9"
     },
     {
         key: "CAA", start: "2026-03-06", end: "2026-03-10",
         champISO: "2026-03-10T19:00:00-04:00",
         channel: "CBSSN",
-        winner: "Hofstra", 
+        winner: "Hofstra",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/10"
     },
     {
@@ -94,7 +94,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Horizon League", start: "2026-03-02", end: "2026-03-10",
         champISO: "2026-03-10T19:00:00-04:00",
         channel: "ESPN",
-        winner: "Wright State", 
+        winner: "Wright State",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/45"
     },
     {
