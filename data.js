@@ -101,7 +101,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Ivy League", start: "2026-03-14", end: "2026-03-15",
         champISO: "2026-03-15T12:00:00-04:00",
         channel: "ESPN2",
-        winner: null,
+        winner: "Pennsylvania",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/12"
     },
     {
