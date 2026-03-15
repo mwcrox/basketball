@@ -17,7 +17,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Atlantic 10", start: "2026-03-11", end: "2026-03-15",
         champISO: "2026-03-15T13:00:00-04:00",
         channel: "CBS",
-        winner: null,
+        winner: "VCU",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/3"
     },
     {
@@ -164,7 +164,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "SEC", start: "2026-03-11", end: "2026-03-15",
         champISO: "2026-03-15T13:00:00-04:00",
         channel: "ESPN",
-        winner: null,
+        winner: "Arkansas",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/23"
     },
     {
