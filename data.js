@@ -10,7 +10,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "American", start: "2026-03-11", end: "2026-03-15",
         champISO: "2026-03-15T15:15:00-04:00",
         channel: "ESPN",
-        winner: null,
+        winner: "South Florida",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/62"
     },
     {
@@ -66,7 +66,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Big Ten", start: "2026-03-10", end: "2026-03-15",
         champISO: "2026-03-15T15:30:00-04:00",
         channel: "CBS",
-        winner: null,
+        winner: "Purdue",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/7"
     },
     {
