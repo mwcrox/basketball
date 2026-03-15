@@ -122,7 +122,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "MEAC", start: "2026-03-11", end: "2026-03-14",
         champISO: "2026-03-14T13:00:00-04:00",
         channel: "ESPN2",
-        winner: null,
+        winner: "Howard",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/16"
     },
     {
