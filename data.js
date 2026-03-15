@@ -73,7 +73,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Big West", start: "2026-03-11", end: "2026-03-14",
         champISO: "2026-03-14T19:00:00-07:00",
         channel: "ESPN2",
-        winner: null,
+        winner: "Hawaii",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/9"
     },
     {
@@ -213,7 +213,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "WAC", start: "2026-03-11", end: "2026-03-14",
         champISO: "2026-03-14T21:00:00-07:00",
         channel: "ESPN2",
-        winner: null,
+        winner: "California Baptist",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/30"
     }
 ];
