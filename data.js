@@ -24,7 +24,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "ACC", start: "2026-03-10", end: "2026-03-14",
         champISO: "2026-03-14T20:30:00-04:00",
         channel: "ESPN",
-        winner: null,
+        winner: "Duke",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/2"
     },
     {
@@ -38,14 +38,14 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Big 12", start: "2026-03-10", end: "2026-03-14",
         champISO: "2026-03-14T18:00:00-04:00",
         channel: "ESPN",
-        winner: null,
+        winner: "Arizona",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/8"
     },
     {
         key: "Big East", start: "2026-03-11", end: "2026-03-14",
         champISO: "2026-03-14T18:30:00-04:00",
         channel: "FOX",
-        winner: null,
+        winner: "St. Johns",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/4"
     },
     {
@@ -87,7 +87,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Conference USA", start: "2026-03-10", end: "2026-03-14",
         champISO: "2026-03-14T20:30:00-04:00",
         channel: "CBSSN",
-        winner: null,
+        winner: "Kennesaw State",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/11"
     },
     {
@@ -115,7 +115,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "MAC", start: "2026-03-12", end: "2026-03-14",
         champISO: "2026-03-14T20:00:00-04:00",
         channel: "ESPN2",
-        winner: null,
+        winner: "Akron",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/14"
     },
     {
@@ -136,7 +136,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "Mountain West", start: "2026-03-11", end: "2026-03-14",
         champISO: "2026-03-14T18:00:00-04:00",
         channel: "CBS",
-        winner: null,
+        winner: "Utah State",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/44"
     },
     {
@@ -185,7 +185,7 @@ window.CONFERENCE_TOURNAMENTS = [
         key: "SWAC", start: "2026-03-09", end: "2026-03-14",
         champISO: "2026-03-14T19:30:00-04:00",
         channel: "ESPNU",
-        winner: null,
+        winner: "Prairie View A&M",
         espnUrl: "https://www.espn.com/mens-college-basketball/scoreboard/_/seasontype/2/group/26"
     },
     {
